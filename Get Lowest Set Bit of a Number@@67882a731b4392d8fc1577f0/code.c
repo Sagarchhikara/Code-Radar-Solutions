@@ -11,7 +11,7 @@ while(!(num&1)){
     num>>=1;
     position++;
 }
-printf("%d",position)
+printf("%d",position);
 }
 return 0;
 }
