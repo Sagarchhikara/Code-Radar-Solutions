@@ -4,13 +4,14 @@ int main() {
     scanf("%d",&num);
     if(num==0){
         printf("No se bits found\n");
-        
-    
-    return 0;
-}
-int pos=1;
-while((num&1)==0){
+    }  
+else{
+int position=0;
+while(!(num&1)){
     num>>=1;
-    pos++;
+    position++;
 }
+printf("%d",position)
+}
+return 0;
 }
