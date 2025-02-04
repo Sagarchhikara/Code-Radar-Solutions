@@ -10,8 +10,8 @@ int main() {
         else{
             break;
         }
-        printf("%d",count);
+        
     }
-    
+    printf("%d",count);
     return 0;
 }                                                                                                                                                                                                                                                                                                                                                                                                               
