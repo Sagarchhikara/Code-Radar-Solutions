@@ -3,10 +3,10 @@ int main() {
     int a;
     scanf("%d",&a);
     if(a%5==0 && a%11==0){
-        printf("True");
+        printf("Divisible");
     }
     else{
-        printf("False");
+        printf("Not Divisible");
     }
     
     return 0;
