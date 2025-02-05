@@ -1,8 +1,11 @@
 #include <stdio.h>
+int flipbits(int num){
+    return ~num;
+}
 int main() {
-    unsigned int num;
-    scanf("%u",&num);
-    unsigned int flipped=~num;
-    printf("%u", flipped);
+     int num;
+    scanf("%d",&num);
+    int flipped=flipbits(num);
+    printf("%d\n", flipped);
     return 0;
 }
