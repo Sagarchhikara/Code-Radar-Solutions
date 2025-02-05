@@ -1,11 +1,16 @@
 #include <stdio.h>
 void decimaltobinary(int num){
+    int binary[32],i=0;
     if (num==0){
         printf("0\n");
         return;
     }
-    for (int i=31;i>=0;i--){
-        printf("%d",(num>>i)&1);
+    while(num>0){
+        binary[i++]=num%2;
+        num /=2;
+    }
+    for (int j=i-1;i>=0;j--){
+        printf("%d",binary[j]);
     }
     printf("\n");
 }
