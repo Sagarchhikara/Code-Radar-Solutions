@@ -8,15 +8,19 @@ int main() {
         case +:
             op=a+b;
             printf("%d",op);
+            break;
         case - :
             op=a-b;
             printf("%d",op);
+            break;
         case *:
             op=a*b;
             printf("%d",op);
+            break;
         case % :
             op=a%b;
             printf("%d",op);
+            break;
         default:
             printf("Invalid operation");
     }
