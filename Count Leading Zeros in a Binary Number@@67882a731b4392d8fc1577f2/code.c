@@ -15,7 +15,7 @@ int countleadingzero(unsigned int num){
     return count;
 }
 int main(){
-    unsigned int num ;
+    unsigned int num;
     scanf("%u",&num);
     int leadingzeros=countleadingzero(num);
     printf("%d\n",leadingzeros);
