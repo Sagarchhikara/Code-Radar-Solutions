@@ -12,7 +12,7 @@ int main() {
         printf("Second");
     }
     else{
-        printf("Invalid")
+        printf("Invalid");
     }
     
     return 0;
