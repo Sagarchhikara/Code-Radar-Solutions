@@ -2,13 +2,14 @@
 int main() { 
     int a,b,c;
     scanf("%d %d %d",&a,&b,&c);
-    int max=num1;
-    if(num2>max){
-        max=num2;
+    if(a>=b&&a>=c){
+        printf("%d\n",a);
     }
-    if (num3>max){
-        max=num3;
+    else if(b>=a&& b>=c){
+        printf("%d\n",b);
     }
-    printf("%d",max);
+    else{
+        printf("%d\n",c);
+    }
     return 0;
 }
