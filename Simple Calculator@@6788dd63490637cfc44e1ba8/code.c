@@ -22,8 +22,3 @@ int main() {
     }
     return 0;
 }
-            
-    }
-    printf("%s", welcome());
-    return 0;
-}
