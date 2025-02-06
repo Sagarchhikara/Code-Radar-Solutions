@@ -5,10 +5,10 @@ int main() {
     if(a=='a','e','i','o','u'){
         printf("Vowel");
     }
-    else if(ch>='a'&&ch<='z'){
+    else if(a>='a'&&a<='z'){
         printf("Consonant");
     }
-    else if(isdigit(ch)){
+    else if(isdigit(a)){
         printf("Digit");
     }
     else{
