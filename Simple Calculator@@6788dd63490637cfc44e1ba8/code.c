@@ -20,7 +20,7 @@ int main (){
     printf("%d",result);
    }
    else{
-    printf("error")
+    printf("error");
    }
     return 0;
 }
