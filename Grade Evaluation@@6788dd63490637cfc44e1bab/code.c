@@ -4,15 +4,15 @@ int main() {
     scanf("%c",&a);
     switch(a){
         case 'A':
-            printf("Excellent\n");
+            printf("Excellent");
         case 'B':
-            printf("Good\n");
+            printf("Good");
         case 'C':
-            printf("Average\n");
+            printf("Average");
         case 'D':
-            printf("Below Average\n");
+            printf("Below Average");
         case 'F':
-            printf("Fail\n");
+            printf("Fail");
         default:
             printf("Inavlid Grade");
     }
