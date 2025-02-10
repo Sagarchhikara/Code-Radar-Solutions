@@ -1,27 +1,19 @@
 #include <stdio.h>
 int main (){
-    char operat;
-    int num1,num2,result;
-    scanf("%d %d",&num1,&num2);
-    scanf("%c",&operat)
-   if (operat=='+'){
-    result=num1+num2;
-    printf("%d",&result);
-   }
-   else if(operat=='-'){
-    result=num1-num2;
-    printf("%d",&result);
-   }
-   else if(operat=='*'){
-    result=num1*num2;
-    printf("%d",result)
-   }
-   else if(operat=="/"){
-    result=num1/num2;
-    printf("%d",result);
-   }
-   else{
-    printf("error");
-   }
-    return 0;
+  int a,b;
+  char op;
+  scanf("%d %d %d",&a,&b,&op);
+  if(op=='+'){
+    ptinf("%d",op);
+} else if(op=='-'){
+    printf("%d",a-b);
+} else if(op=='*'){
+    printf("%d",a*b);
+} else if(op=='/'){
+    if(b==0){
+        printf("Error");
+    }else{
+    printf("%d",a/b)
+}}
+return 0;
 }
