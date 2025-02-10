@@ -2,7 +2,7 @@
 int main (){
   int a,b;
   char op;
-  scanf("%d %d %d",&a,&b,&op);
+  scanf("%d %d %c",&a,&b,&op);
   if(op=='+'){
     ptinf("%d",op);
 } else if(op=='-'){
