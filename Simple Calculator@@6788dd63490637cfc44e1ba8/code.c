@@ -4,7 +4,7 @@ int main (){
   char op;
   scanf("%d %d %c",&a,&b,&op);
   if(op=='+'){
-    ptinf("%d",op);
+    printf("%d",op);
 } else if(op=='-'){
     printf("%d",a-b);
 } else if(op=='*'){
@@ -14,6 +14,10 @@ int main (){
         printf("Error");
     }else{
     printf("%d",a/b);
-}}
+}
+} else {
+    printf("%d",a*b);
+}
 return 0;
 }
+
