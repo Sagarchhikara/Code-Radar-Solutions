@@ -12,4 +12,5 @@ int main(){
     int n;
     scanf("%d",&n);
     printdiamond(n);
+    return 0;
     }
