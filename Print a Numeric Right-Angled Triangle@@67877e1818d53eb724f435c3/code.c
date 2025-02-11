@@ -4,7 +4,7 @@ int main() {
     scanf("%d",&height);
 
     for (i=1;i<=height;i++) {
-        for (j=1;j<=i,j++) {
+        for (j=1;j<=i;j++) {
             printf("%d ",j);
         }
         printf("\n");
