@@ -1,16 +1,26 @@
 #include <stdio.h>
-void printdiamond(int n){
-    for(int i=1;i<=2*n-1;i++){
-        int stars=(i<=n)?(2*i-1):(2(2*n-i)-1);
-        int spaces=n-(i<=n?i:(2*n-1));
-    for(int s=0; s<spaces,s++) printf(" ");
-    for (int s=0;s<stars; s++) printf("*");
-    printf("\n");
+
+int main() {
+    int n, i, j;
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++) {
+        for (j = i; j < n; j++) {
+            printf(" ");
         }
-}
-int main(){
-    int n;
-    scanf("%d",&n);
-    printdiamond(n);
-    return 0;
+        for (j = 1; j <= (2 * i - 1); j++) {
+            printf("*");
+        }
+        printf("\n");
     }
+    for (i = n - 1; i >= 1; i--) {
+        for (j = n; j > i; j--) {
+            printf(" ");
+        }
+        for (j = 1; j <= (2 * i - 1); j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
