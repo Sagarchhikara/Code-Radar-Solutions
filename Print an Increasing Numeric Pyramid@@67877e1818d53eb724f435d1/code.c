@@ -2,27 +2,13 @@
 
 int main() {
     int n;
-    
-    scanf("%d", &n); // Input the number of rows
+    scanf("%d", &n); // Read input
 
-    for (int i = 1; i <= n; i++) {
-        // Print spaces to center the pyramid
-        for (int j = 1; j <= n - i; j++) {
-           
+    for (int i = 1; i <= n; i++) { // Loop for rows
+        for (int j = 1; j <= i; j++) { // Loop for columns
+            printf("%d ", j); // Print numbers
         }
-
-        // Print numbers in increasing order
-        for (int j = 1; j <= i; j++) {
-            printf("%d ", j);
-        }
-
-        // Print numbers in decreasing order (excluding the last number)
-        for (int j = i - 1; j >= 1; j--) {
-            printf("%d ", j);
-        }
-
-        // Move to the next line after each row
-        printf("\n");
+        printf("\n"); // Newline after each row
     }
 
     return 0;
