@@ -8,7 +8,7 @@ int main() {
     for (int i = 1; i <= n; i++) {
         // Print spaces to center the pyramid
         for (int j = 1; j <= n - i; j++) {
-            printf("  ");
+           
         }
 
         // Print numbers in increasing order
