@@ -20,9 +20,3 @@ int isPrime(int num){
     }
     return 1;
 }
-int main(){
-    int number;
-    scanf("%d",&number);
-    printf("%d",isPrime(number));
-    return 0;
-}
