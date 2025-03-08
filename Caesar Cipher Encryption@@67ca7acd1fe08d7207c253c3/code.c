@@ -2,7 +2,7 @@
 #include<string.h>
 void caesarCipher(char message[],int shift,char encrypted){
     int i;
-    for(i=0;message[i]!='\0',i++){
+    for(i=0;message[i]!='\0';i++){
         if(message[i]>='A'&& message[i]<='Z'){
             message[i]=((message[i]-'A'+key)%26)+'A';
         }
@@ -13,5 +13,5 @@ void caesarCipher(char message[],int shift,char encrypted){
             encrypted[i]=message[i];
         }
     }
-    encrypted[i]='\0'
+    encrypted[i]='\0';
 }
