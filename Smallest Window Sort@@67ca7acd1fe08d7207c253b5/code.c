@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stlib.h>
+#include<stdlib.h>
 #include<limits.h>
 void findUnsortedSubarray(int arr[],int n){
     if(n<=1){
