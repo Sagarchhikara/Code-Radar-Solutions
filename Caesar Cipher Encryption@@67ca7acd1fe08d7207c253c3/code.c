@@ -1,3 +1,5 @@
+#include<stdio.h>
+#include<string.h>
 void caesarCipher(char message[],int key){
     int i;
     for(i=0;i<strlen(message);i++){
