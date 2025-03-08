@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<limits.h>
 void findUnsortedSubarray(int arr[],int a){
-    if(n<=1){
+    if(a<=1){
         printf("0\n");
         return;
     }
