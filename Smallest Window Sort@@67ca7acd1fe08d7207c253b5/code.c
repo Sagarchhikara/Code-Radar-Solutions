@@ -1,20 +1,20 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<limits.h>
-void findUnsortedSubarray(int arr[],int n){
+void findUnsortedSubarray(int arr[],int a){
     if(n<=1){
         printf("0\n");
         return;
     }
     int left =0;
-    while(left < n-1 && arr[left] <=arr[left+1]){
+    while(left < a-1 && arr[left] <=arr[left+1]){
         left++;
     }
-    if(left ==n-1){
+    if(left ==a-1){
         printf("0\n");
         return;
     }
-    int right= n-1;
+    int right= a-1;
     while(right>0&&arr[right]>= arr[right-1]){
         right--;
     }
@@ -28,7 +28,7 @@ void findUnsortedSubarray(int arr[],int n){
     while(left>0&& arr[left-1]>min_val){
         left--;
     }
-    while(right<n-1&& arr[right+1]<max_val){
+    while(right<a-1&& arr[right+1]<max_val){
         right++;
     }
     printf("%d\n",right-left+1);
