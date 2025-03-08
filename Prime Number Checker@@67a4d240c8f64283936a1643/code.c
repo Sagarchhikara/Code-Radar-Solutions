@@ -16,18 +16,13 @@ int isprime(int num){
         if(num%i==0||num%(i+2)==0){
             return 0;
         }
-        i+=6
+        i+=6;
     }
     return 1;
 }
 int main(){
     int number;
     scanf("%d",&number);
-    if(isprime(number)){
-        printf("%d",number);
-    }
-    else{
-        printf("%d",number);
-    }
+    printf("%d",isprime(number));
     return 0;
 }
