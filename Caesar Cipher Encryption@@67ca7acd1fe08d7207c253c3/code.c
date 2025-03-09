@@ -1,17 +1,17 @@
 #include<stdio.h>
 #include<string.h>
-void caesarCipher(char message[],int shift,char encrypted){
-    int i;
-    for(i=0;message[i]!='\0';i++){
-        if(message[i]>='A'&& message[i]<='Z'){
-            message[i]=((message[i]-'A'+shift)%26)+'A';
+#include<ctype.h>
+void caesarCipher(char message[],int shift, char result[],int encrypt){
+   int i;
+   for(i=0;message[i]!='\0';i++){
+    if(isalpha(message[i])){
+        char base= isupper(message[i])?'A':'a';
+        if(encrypt){
+            result[i]=(message[i]-base-shift+26)%26+base;
         }
-        else if(message[i]>='a' && message[i]<='z'){
-            message[i]=((message[i]-'a'+shift)%26)+'a';
-        }
-        else{
-            encrypted[i]=message[i];
-        }
+    }else{
+        result[i]=message[i];
     }
-    encrypted[i]='\0';
+   } 
+   result[i]='\0';
 }
