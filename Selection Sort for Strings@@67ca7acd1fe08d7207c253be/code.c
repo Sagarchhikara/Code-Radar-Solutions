@@ -1,24 +1,21 @@
 #include<stdio.h>
 #include<string.h>
-void selectionSort(char arr[][100],int n){
-    int i,j,minIndex;
-    char temp[100];
+#define MAX_STRINGS 100
+#define MAX_LENGTH 100
+void selectionSort(char arr[][MAX_LENGTH],int n){
+    int i,j,min_idx;
     for(i=0;i<n-1;i++){
-        minIndex=i;
+        min_idx=i;
         for(j=i+1;j<n;j++){
-            if(strcmp(arr[j],arr[minIndex])<0){
-                minIndex=j;
+            if(strcmp(arr[j],arr[min_idx])<0){
+                min_idx=j
             }
         }
-        if(minIndex!=i){
+        if(min_idx!=i){
+            char temp[MAX_LENGTH];
             strcpy(temp,arr[i]);
-            strcpy(arr[i],arr[minIndex]);
-            strcpy(arr[minIndex],temp);
+            strcpy(arr[i],arr[min_idx]);
+            strcpy(arr[min_idx],temp);
         }
-    }
-}
-void printArray(char arr[][100],int n){
-    for(int i=0;i<n;i++){
-        printArray("%s\n",arr[i]);
     }
 }
