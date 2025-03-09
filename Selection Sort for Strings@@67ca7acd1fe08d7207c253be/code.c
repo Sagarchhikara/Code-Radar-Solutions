@@ -21,6 +21,6 @@ void selectionSort(char arr[][MAX_LENGTH],int n){
 }
 void printArray(char arr[][MAX_LENGTH],int n){
     for(int i=0;i<n;i++){
-        printArray("%s\n",arr[i]);
+        printArray("%c\n",arr[i]);
     }
 }
