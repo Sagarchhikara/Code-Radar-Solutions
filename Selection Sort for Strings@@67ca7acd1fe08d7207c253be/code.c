@@ -1,5 +1,3 @@
-#include<stdio.h>
-#include<string.h>
 #define MAX 100
 #define SIZE 100
 void swap(char str1[],char str2[]){
