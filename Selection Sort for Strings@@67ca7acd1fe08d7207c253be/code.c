@@ -20,7 +20,7 @@ void selectionSort(char arr[][MAX],int n){
         if(min_idx!=i){
             swap(arr[i],arr[minIndex])
     }
-}
+}}
 void printArray(char arr[][MAX],int n){
     for(int i=0;i<n;i++){
         printArray("%s\n",arr[i]);
