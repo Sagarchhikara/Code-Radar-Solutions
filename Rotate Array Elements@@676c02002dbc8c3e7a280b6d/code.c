@@ -1,4 +1,4 @@
-// Your code here...#include <stdio.h>
+#include <stdio.h>
 int reverse(int arr[], int start, int end) {
     while (start<end) {
         int temp = arr[start];
