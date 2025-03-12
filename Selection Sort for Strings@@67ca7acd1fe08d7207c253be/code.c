@@ -23,6 +23,6 @@ void selectionSort(char arr[][MAX],int n){
 }}
 void printArray(char arr[][MAX],int n){
     for(int i=0;i<n;i++){
-        printArray("%s\n",arr[i]);
+        printArray("%c\n",arr[i]);
     }
 }
