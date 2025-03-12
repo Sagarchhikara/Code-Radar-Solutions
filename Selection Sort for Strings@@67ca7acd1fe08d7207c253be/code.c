@@ -17,7 +17,7 @@ void selectionSort(char arr[][MAX],int n){
                 minIndex=j;
             }
         }
-        if(min_idx!=i){
+        if(minIndex!=i){
             swap(arr[i],arr[minIndex])
     }
 }}
