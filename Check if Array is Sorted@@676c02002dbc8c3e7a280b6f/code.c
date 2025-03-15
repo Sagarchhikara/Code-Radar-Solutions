@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main(){
-    int i,n,arr[];
-    for(i=0;i<n,i++){
-        scanf("%d",a[i]);
+    int i,n,arr[100];
+    for(i=0;i<n;i++){
+        scanf("%d",arr[i]);
     }
-    if(a[i]>a[i-1]){
+    if(arr[i]>arr[i-1]){
         printf("Sorted");
     }
     else{
