@@ -27,7 +27,7 @@ int main() {
     
     // Check if second largest exists
     if(largest == second_largest) {
-        printf("There is no second largest element\n");
+        printf("-1");
     } else {
         printf("%d\n", second_largest);
     }
