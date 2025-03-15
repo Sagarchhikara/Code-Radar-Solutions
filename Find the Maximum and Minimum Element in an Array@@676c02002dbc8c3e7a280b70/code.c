@@ -7,7 +7,7 @@ int main(){
     }
     int max=0;
     if(arr[i]>max){
-        max=a[i];
+        max=arr[i];
     }
     int min=0;
     else if(arr[i]<min){
