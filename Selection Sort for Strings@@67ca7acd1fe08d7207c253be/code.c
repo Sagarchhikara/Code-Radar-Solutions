@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-void printArray( char *arr[],int n,const char*message){
+void printArray( char arr[][100],int n,const char*message){
     int i;
     printf("%s\n",message);
     for(i=0;i<n;i++){
@@ -8,9 +8,9 @@ void printArray( char *arr[],int n,const char*message){
     }
     printf("\n");
 }
-void selectionSort(arr[],int n){
+void selectionSort(char arr[][100],int n){
     int i,j,min_idx;
-    char*temp;
+    char temp[100];
     for(i=0;i<n-1;i++){
         min_idx=i;
         for(j=i+1;j<n;j++){
@@ -19,9 +19,9 @@ void selectionSort(arr[],int n){
             }
         }
         if(min_idx !=i){
-            temp =arr[i];
-            arr[i]=arr[min_idx];
-            arr[min_idx]=temp;
+           strcpy(temp =arr[i]);
+            strpcy(arr[i]=arr[min_idx]);
+            strcpy(arr[min_idx]=temp);
         }
     }
 }
