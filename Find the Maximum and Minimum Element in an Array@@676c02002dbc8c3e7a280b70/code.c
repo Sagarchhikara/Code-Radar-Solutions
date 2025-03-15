@@ -6,12 +6,12 @@ int main(){
         scanf("%d",arr[i]);
     }
     int max=0;
-    if(a[i]>max){
+    if(arr[i]>max){
         max=a[i];
     }
     int min=0;
-    else if(a[i]<min){
-        min=a[i];
+    else if(arr[i]<min){
+        min=arr[i];
     }
     printf("%d",max);
     printf("%d",min);
