@@ -42,7 +42,7 @@ int main() {
     if(second_largest == INT_MIN) {
         printf("-1");
     } else {
-        printf("The second largest element is: %d\n", second_largest);
+        printf("%d\n", second_largest);
     }
     
     return 0;
