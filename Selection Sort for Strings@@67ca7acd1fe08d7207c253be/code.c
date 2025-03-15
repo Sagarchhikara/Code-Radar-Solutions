@@ -1,26 +1,27 @@
-#define MAX 100
-#define SIZE 100
-void swap(char str1[],char str2[]){
-    char temp[MAX];
-    strcpy(temp,str1);
-    strcpy(str1,str2);
-    strcpy(str2,temp);
+#include <stdio.h>
+#include <string.h>
+void printArray( char *arr[],int n,const char*message){
+    int i;
+    printf("%s\n",message);
+    for(i=0;i<n,i++){
+        printf("%s\n",arr[i]);
+    }
+    printf("\n");
 }
-void selectionSort(char arr[][MAX],int n){
-    int minIndex;
-    for( int i=0;i<n-1;i++){
-        minIndex=i;
-        for( int j=i+1;j<n;j++){
-            if(strcmp(arr[j],arr[minIndex])<0){
-                minIndex=j;
+void selectionSort(char*arr[],int n){
+    int i,j,min_idx;
+    char*temp;
+    for(i=0;i<n-1;i++){
+        min_idx=i;
+        for(j=i+1;j<n;j++){
+            if(strcmp(arr[j],arr[min_idx])<0){
+                min_idx=j;
             }
         }
-        if(minIndex!=i){
-            swap(arr[i],arr[minIndex]);
-    }
-}}
-void printArray(char arr[][MAX],int n){
-    for(int i=0;i<n;i++){
-        printArray("%c\n",arr[i]);
+        if(min_idx !=i){
+            temp =arr[i];
+            arr[i]=arr[min_idx];
+            arr[min_idx]=temp;
+        }
     }
 }
