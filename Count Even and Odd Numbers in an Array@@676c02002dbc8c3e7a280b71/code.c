@@ -7,11 +7,11 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(i=0;i<n;i++){
-        if(arr[i]/2==0){
-            even_count+=;
+        if(arr[i]%2==0){
+            even_count++;
         }
         else{
-            odd_count+=;
+            odd_count++;
         }
     }
     printf("%d",even_count);
