@@ -6,14 +6,14 @@ int main(){
     scanf("%d",&n);
     for(i=0;i<n;i++){
         scanf("%d",&t[i]);
-        freq[i]=-1
+        freq[i]=-1;
     }
     for(i=0;i<n;i++){
         count=1;
         for(j=i+1;j<n;j++){
             if(t[i]==t[j]){
                 count++;
-                freq[j]=0
+                freq[j]=0;
             }
         }
         if(freq[i]!=0){
