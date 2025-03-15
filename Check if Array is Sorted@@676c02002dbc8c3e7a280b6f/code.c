@@ -4,7 +4,7 @@ int main(){
     for(i=0;i<n;i++){
         scanf("%d",arr[i]);
     }
-    if(arr[i]>arr[i-1]){
+    if(arr[i]>arr[i+1]){
         printf("Sorted");
     }
     else{
