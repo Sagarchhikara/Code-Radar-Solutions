@@ -1,4 +1,4 @@
-int searchRotatedArray(int arr[], int size, int target) {
+int searchInRotatedArray(int arr[], int size, int target) {
     int left = 0;
     int right = size - 1;
     
