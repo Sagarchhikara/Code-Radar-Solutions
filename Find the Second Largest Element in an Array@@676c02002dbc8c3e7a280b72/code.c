@@ -11,7 +11,7 @@ int main() {
     
     // Check if there are at least two elements
     if(n < 2) {
-        printf("Not enough elements to find second largest\n");
+        printf("-1");
         return 0;
     }
     
