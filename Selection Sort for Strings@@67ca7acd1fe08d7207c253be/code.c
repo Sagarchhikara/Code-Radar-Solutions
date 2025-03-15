@@ -3,12 +3,12 @@
 void printArray( char *arr[],int n,const char*message){
     int i;
     printf("%s\n",message);
-    for(i=0;i<n,i++){
+    for(i=0;i<n;i++){
         printf("%s\n",arr[i]);
     }
     printf("\n");
 }
-void selectionSort(char*arr[],int n){
+void selectionSort(arr[],int n){
     int i,j,min_idx;
     char*temp;
     for(i=0;i<n-1;i++){
