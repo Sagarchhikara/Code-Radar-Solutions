@@ -1,4 +1,4 @@
-// Your code here...void trackPlayerRanks(int ranked[], int n, int player[], int m, int result[]) {
+void trackPlayerRanks(int ranked[], int n, int player[], int m, int result[]) {
     // Step 1: Create dense ranks for the leaderboard scores
     int denseRanks[200000];
     
