@@ -55,7 +55,7 @@ int main() {
     int result = findMajorityElement(arr, n);
     
     if (result != -1) {
-        printf("The majority element is: %d\n", result);
+        printf( result);
     } else {
         printf("-1\n");
     }
