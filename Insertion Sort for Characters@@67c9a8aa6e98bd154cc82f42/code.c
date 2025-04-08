@@ -1,5 +1,5 @@
 // Your code here...
-void insertionSort(int arr[],int n){
+void insertionSort(char arr[],int n){
     for(int i=1;i<n;i++){
         int key =arr[i];
         int j=i-1;
@@ -10,7 +10,7 @@ void insertionSort(int arr[],int n){
         arr[j+1]=key;
     }
 }
-void printArray(int arr[],int n){
+void printArray(char arr[],int n){
     for(int i=0;i<n;i++){
         printf("%d",arr[i]);
     }
