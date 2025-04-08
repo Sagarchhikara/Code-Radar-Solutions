@@ -23,7 +23,7 @@ bool isPrime(int n) {
 
 // Function to print all prime numbers in the range [a,b]
 void printPrimesInRange(int a, int b) {
-    printf("Prime numbers between %d and %d are:\n", a, b);
+    
     
     for (int i = a; i <= b; i++) {
         if (isPrime(i)) {
