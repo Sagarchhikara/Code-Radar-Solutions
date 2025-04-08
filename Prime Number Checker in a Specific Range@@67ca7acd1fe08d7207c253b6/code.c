@@ -20,7 +20,7 @@ void printPrimesInRange(int a ,int b){
         b=temp;
     }
     for(int i=a;i<=b;i++){
-        if(isPrime9(i)){
+        if(isPrime(i)){
             printf("%d",i);
         }
     }
