@@ -1,30 +1,29 @@
-#include <stdio.h>
 #include <stdbool.h>
-#include <math.h>
 
 // Function to check if a number is prime
-bool isPrime(int num) {
-    if (num <= 1) return false;
-    if (num == 2) return true;
-    if (num % 2 == 0) return false;
+bool isPrime(int n) {
+    if (n <= 1) {
+        return false;
+    }
+    if (n <= 3) {
+        return true;
+    }
+    if (n % 2 == 0 || n % 3 == 0) {
+        return false;
+    }
     
-    for (int i = 3; i <= (num); i += 2) {
-        if (num % i == 0) {
+    // Check using 6k +/- 1 optimization
+    for (int i = 5; i * i <= n; i += 6) {
+        if (n % i == 0 || n % (i + 2) == 0) {
             return false;
         }
     }
     return true;
 }
 
-// Function to find and print primes in range [a, b]
+// Function to print all prime numbers in the range [a,b]
 void printPrimesInRange(int a, int b) {
-    
-    // Ensure we start from the smaller number
-    if (a > b) {
-        int temp = a;
-        a = b;
-        b = temp;
-    }
+    printf("Prime numbers between %d and %d are:\n", a, b);
     
     for (int i = a; i <= b; i++) {
         if (isPrime(i)) {
@@ -33,4 +32,3 @@ void printPrimesInRange(int a, int b) {
     }
     printf("\n");
 }
-
