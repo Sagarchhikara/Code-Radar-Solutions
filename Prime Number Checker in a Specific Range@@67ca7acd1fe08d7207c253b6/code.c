@@ -24,11 +24,17 @@ bool isPrime(int n) {
 // Function to print all prime numbers in the range [a,b]
 void printPrimesInRange(int a, int b) {
     
-    
+    int count = 0;
     for (int i = a; i <= b; i++) {
         if (isPrime(i)) {
             printf("%d ", i);
+            count++;
         }
     }
+    
+    if (count == 0) {
+        printf("No prime numbers found in this range.");
+    }
+    
     printf("\n");
 }
