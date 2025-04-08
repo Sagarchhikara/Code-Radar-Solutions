@@ -10,7 +10,7 @@ void insertionSort(int arr[],int n){
         arr[j+1]=key;
     }
 }
-int findKthSmallest(int arr[],int n,int k){
+int KthSmallest(int arr[],int n,int k){
     if(k<=0||k>n){
         return -1;
     }
