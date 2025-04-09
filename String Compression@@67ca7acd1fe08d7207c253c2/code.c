@@ -35,5 +35,5 @@ void compressString(char* str, char* compressed) {
     }
     
    
-    return 0;
+    return compressString;
 }
