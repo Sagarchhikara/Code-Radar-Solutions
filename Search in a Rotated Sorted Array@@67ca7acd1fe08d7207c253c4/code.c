@@ -5,7 +5,7 @@
  * @param target - value to search for
  * @return index of target or -1 if not found
  */
-int search(int* nums, int n, int target) {
+int search(int arr[], int n, int target) {
     // Handle edge cases
     if (nums == NULL || n <= 0)
         return -1;
