@@ -7,7 +7,7 @@
  */
 int search(int arr[], int n, int target) {
     // Handle edge cases
-    if (arr[] == NULL || n <= 0)
+    if (arr== NULL || n <= 0)
         return -1;
     
     int left = 0;
