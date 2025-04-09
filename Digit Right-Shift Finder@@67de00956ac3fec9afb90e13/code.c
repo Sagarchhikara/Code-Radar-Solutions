@@ -13,6 +13,6 @@ int digitRightShift(int N){
     }
     numStr[0]=lastDigit;
     int shiftedNum;
-    scanf(numStr;"%d",&shiftedNum);
+    scanf(numStr,"%d",&shiftedNum);
     return shiftedNum;
 }
