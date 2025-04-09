@@ -24,4 +24,3 @@ int digitRightShift(int N) {
     return shiftedNum;
 }
 
-}
