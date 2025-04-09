@@ -1,5 +1,5 @@
 // Your code here...
-#inlude<string.h>
+#include<string.h>
 int digitRightShift(int N){
     char numStr[20];
     sprintf(numStr,"%d",N);
