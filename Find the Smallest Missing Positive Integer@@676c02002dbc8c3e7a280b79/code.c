@@ -1,4 +1,3 @@
-// Your code here...                    
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -34,7 +33,7 @@ int main() {
     int n;
     
     // Get the size of the array
-    
+   
     scanf("%d", &n);
     
     // Allocate memory for the array
@@ -45,7 +44,7 @@ int main() {
     }
     
     // Input array elements
-   
+    
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
@@ -54,7 +53,8 @@ int main() {
     int result = findSmallestMissingPositive(arr, n);
     
     // Output the result
-   
+    printf(" %d", result);
+    
     // Free allocated memory
     free(arr);
     
