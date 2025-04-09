@@ -1,13 +1,6 @@
-/**
- * Finds the index of a target value in a rotated sorted array
- * @param nums - sorted array rotated at some pivot
- * @param n - size of the array
- * @param target - value to search for
- * @return index of target or -1 if not found
- */
-int search(int arr[], int n, int target) {
+int searchInRotatedArray(int* arr, int n, int target) {
     // Handle edge cases
-    if (arr== NULL || n <= 0)
+    if (arr == NULL || n <= 0)
         return -1;
     
     int left = 0;
