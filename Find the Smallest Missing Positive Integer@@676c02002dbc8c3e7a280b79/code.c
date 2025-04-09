@@ -53,7 +53,7 @@ int main() {
     int result = findSmallestMissingPositive(arr, n);
     
     // Output the result
-    printf(" %d", result);
+    printf("%d", result);
     
     // Free allocated memory
     free(arr);
