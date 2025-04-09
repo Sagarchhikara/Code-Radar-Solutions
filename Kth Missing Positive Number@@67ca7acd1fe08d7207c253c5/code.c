@@ -19,7 +19,7 @@ int findKthMissing(int* arr, int n, int k) {
     }
     
     // Check gaps between array elements
-    for (int i = 1; i < size; i++) {
+    for (int i = 1; i < n; i++) {
         int gap = arr[i] - arr[i-1] - 1;
         if (gap > 0) {
             if (missingCount + gap >= k) {
@@ -31,5 +31,5 @@ int findKthMissing(int* arr, int n, int k) {
     }
     
     // If we reached here, the kth missing is after the last element
-    return arr[size-1] + (k - missingCount);
+    return arr[n-1] + (k - missingCount);
 }
